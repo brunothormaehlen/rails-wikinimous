@@ -1,0 +1,19 @@
+<h2>Write a new article woooo 🥳</h2>
+
+  <%= form_with model: @article do |f| %>
+    <div>
+    <%= f.label :title %>
+    <div>
+    </div>
+    <%= f.text_field :title %>
+    </div>
+    <div>
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+    </div>
+    <%= f.submit %>
+  <% end %>
+<%# </div> %>
+
+<br>
+<%= link_to "Show all articles", articles_path %>

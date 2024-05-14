@@ -1,0 +1,8 @@
+<div class="container-sm xx">
+  <% @articles.each do |article| %>
+    <div class="article-div">
+      <h4><%= link_to article.title, article_path(article), :style=>"color: blue !important" %></h4>
+      <p style="overflow-wrap: break-word"><%= article.content[0..100] %>...</p>
+    </div>
+  <% end %>
+</div>
